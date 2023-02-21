@@ -526,83 +526,143 @@ color: #725158;
 
 .featuers{
    width: 100%;
-   /* height: 100%; */
    margin: 6% auto; 
+   text-transform: capitalize;
 }
 .featuers .topFeatuer{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8d6a72;
+    /* background-color: #8d6a72; */
     text-align: center;
 }
 .featuers .topFeatuer ul {
     display: inline-block;
     padding: 1%;
     width: 100%;
-    background-color: rgb(210, 180, 210);
+    /* background-color: rgb(210, 180, 210); */
     margin: auto;
 }
 .featuers .topFeatuer ul li{
     display: inline-block;
     padding: 2%;
-    background-color: aliceblue;
+    /* background-color: rgb(255, 240, 244); */
     font-size: 17px;
     font-weight: 700;
     color: #4a2d33;
+    cursor: pointer;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
 }
 .featuers .boxBotomFeatuers{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #b59ca1;
+    justify-content: space-between;
+    /* background-color: #b59ca1; */
 }
 .featuers .boxBotomFeatuers .imgBox{
-width: 33%;
-padding: 2%;
-background-color: tomato;
+width: 30%;
+padding: 1%;
+/* background-color: tomato; */
 }
 .featuers .boxBotomFeatuers .imgBox .imge{
-width: 333px;
-height: 400px;
-background-color: turquoise;
+width: 100%;
+height: 380px; 
+/* background-color: turquoise; */
+margin: 3% 0;
+position: relative;
+transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.featuers .boxBotomFeatuers .imgBox .imge .imgeoverlay{
+    /*display: none;
+    */width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 13;
+    opacity: 100%;
+    visibility: hidden;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.featuers .boxBotomFeatuers .imgBox .imge:hover .imgeoverlay {
+    /*display: block;
+    */width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 12;
+    opacity: 40%;
+    visibility: visible;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.featuers .boxBotomFeatuers .imgBox .imge .imgeoverlay .iconBox {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50% , -50%) ;
+    -webkit-transform:translate(-50% , -50%) ;
+    -moz-transform:translate(-50% , -50%) ;
+    -ms-transform:translate(-50% , -50%) ;
+    -o-transform:translate(-50% , -50%) ;
+    /* z-index: 13; */
+        /* opacity: 100%; */
+}
+ .featuers .boxBotomFeatuers .imgBox .imge .imgeoverlay .iconBox i{
+     background-color: #b19299;
+     padding: 8%;
+     margin: 4%;
+     color: #263447;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+     /* opacity: 100%; */
 }
 .featuers .boxBotomFeatuers .imgBox .imge img {
       width: 100%;
       height: 100%;
-      border-radius: 22px ;
-      -webkit-border-radius: 22px ;
-      -moz-border-radius: 22px ;
-      -ms-border-radius: 22px ;
-      -o-border-radius: 22px ;
-      /* background-color: blue; */
+      border-radius: 33px ;
+      -webkit-border-radius: 33px ;
+      -moz-border-radius: 33px ;
+      -ms-border-radius: 33px ;
+      -o-border-radius: 33px ;
 }
-
 .featuers .boxBotomFeatuers .imgBox .textBox{
-/* padding: 1%; */
-background-color: rgb(158, 158, 133);
+padding: 1%;
+/* background-color: rgb(158, 158, 133); */
 }
-
-.featuers .boxBotomFeatuers .imgBox .textBox .iconBox{
-
-}
-
 .featuers .boxBotomFeatuers .imgBox .textBox .iconBox i {
 color: burlywood;
-
 }
-
 .featuers .boxBotomFeatuers .imgBox .textBox p{
-
-
+font-size: 18px;
+padding: 1% 0;
 }
-
 .featuers .boxBotomFeatuers .imgBox .textBox strong {
-
-
+font-size: 20px;
 }
 
 /* ------------------------------------------------------------------start footer */
@@ -620,7 +680,7 @@ footer{
     -moz-border-radius: 18px 18px 0 0px;
     -ms-border-radius: 18px 18px 0 0px;
     -o-border-radius: 18px 18px 0 0px;
-    box-shadow: 0px 0px 20px 8px #947f83;;
+    box-shadow: 0px 0px 20px 8px #dbcbce;;
 }
 footer p {
     font-size: 15px;
